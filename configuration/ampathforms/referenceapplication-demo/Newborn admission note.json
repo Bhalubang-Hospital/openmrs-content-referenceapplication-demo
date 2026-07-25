@@ -29,11 +29,11 @@
               "value": "Input                                                                         OutPut"
             },
             {
-              "type": "patientIdentifier",
+              "type": "obs",
               "questionOptions": {
                 "rendering": "text",
-                "concept": "fb5e45aa-ba4b-4084-8628-ad7b006ce518",
-                "identifierType": "05a29f94-c0ed-11e2-94be-8c13b969e334"
+                "identifierType": "c0e1d2f3-a4b5-4c6d-9e0f-1a2b3c4d5e6f",
+                "concept": "bf392a86-b52e-419e-9363-4feb9f1c87da"
               },
               "id": "motherId",
               "label": "Mother's ID"
@@ -433,7 +433,7 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "c02aac43-0c68-4d0d-a86d-122ce8eee4ce"
+                "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
               },
               "id": "temperature",
               "label": "Temperature"
