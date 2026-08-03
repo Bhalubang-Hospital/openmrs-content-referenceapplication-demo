@@ -1,0 +1,653 @@
+{
+  "name": "SNCU/NICU/KMCU Note",
+  "pages": [
+    {
+      "label": "Visit Details",
+      "sections": [
+        {
+          "label": "Visit Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "9ba979d1-2a54-464e-8fdc-4a7305d842b9",
+                "answers": [
+                  {
+                    "concept": "432492c9-6d6b-44a7-9a4f-65254e273fec",
+                    "label": "New"
+                  },
+                  {
+                    "concept": "2405482f-f736-4418-9d4e-bfdb828caa45",
+                    "label": "Follow up"
+                  }
+                ]
+              },
+              "id": "visitType",
+              "label": "Visit Type"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "74cb0e9e-234b-4bb4-b884-710ba17051ce",
+                "answers": [
+                  {
+                    "concept": "ecbdce0b-bf85-46c6-a9cb-ffa0c0c9aa2e",
+                    "label": "Within Hospital"
+                  },
+                  {
+                    "concept": "cae0de9f-98c6-4484-ba9e-7229fcccc7b8",
+                    "label": "OPD"
+                  },
+                  {
+                    "concept": "2df47a6d-7e84-4523-a070-8bee81a5352f",
+                    "label": "Delivery Ward"
+                  },
+                  {
+                    "concept": "04f6f7e0-e3cb-4e13-a133-4479f759574e",
+                    "label": "Emergency"
+                  },
+                  {
+                    "concept": "8f34aee2-d0bf-4579-81a3-6bbe8aa4a344",
+                    "label": "Other Hospital"
+                  }
+                ]
+              },
+              "id": "referredBy",
+              "label": "Referred By"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "fee07cde-19c9-46a6-a117-2ce8dae3aefb"
+              },
+              "id": "dateOfAdmission",
+              "label": "Date of Admission",
+              "datePickerFormat": "calendar"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "f50023bd-feb5-4945-ac00-4f6e8df0b359"
+              },
+              "id": "dateOfDischarge",
+              "label": "Date of Discharge",
+              "datePickerFormat": "calendar"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "8df4136d-096c-482a-8041-7b0586477d11",
+                "answers": [
+                  {
+                    "concept": "b693c755-21a5-427d-a197-e75c02e4c9c7",
+                    "label": "Improved"
+                  },
+                  {
+                    "concept": "38450f56-a0e5-458c-ab2c-5d27ef84a782",
+                    "label": "Referred"
+                  },
+                  {
+                    "concept": "a662f48f-dc79-470f-817c-8395959e6b33",
+                    "label": "DOPR/LAMA"
+                  },
+                  {
+                    "concept": "4a5df41f-3379-42aa-97dc-6590b2e1934f",
+                    "label": "Death During Treatment"
+                  }
+                ]
+              },
+              "id": "outcomeOfDischarge",
+              "label": "Outcome of Discharge"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "e6c3f858-ee84-480d-a4d3-a71b0d383db7",
+                "answers": [
+                  {
+                    "concept": "b895acce-1d56-4ee6-8d36-4e89275514c3",
+                    "label": "Package A"
+                  },
+                  {
+                    "concept": "a8245149-3616-4692-a0bc-02a430b0fdcc",
+                    "label": "Package B"
+                  },
+                  {
+                    "concept": "a4877c18-febb-4004-83c6-ec0e86d4c5b8",
+                    "label": "Package A+B"
+                  },
+                  {
+                    "concept": "1fe051b9-f2ff-4497-b114-f2925cafc54e",
+                    "label": "Package A+B+C"
+                  }
+                ]
+              },
+              "id": "newbornCarePackageProvided",
+              "label": "Newborn Care Package Provided"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "bf392a86-b52e-419e-9363-4feb9f1c87da"
+              },
+              "id": "motherIp",
+              "label": "Mother IP"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Newborn Details",
+      "sections": [
+        {
+          "label": "Newborn Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "9aa7ab1a-8fc3-4dc7-83e9-2014211625dc"
+              },
+              "id": "gestationalAgeInBirth",
+              "label": "Gestational Age in Birth (Weeks)"
+            }
+          ]
+        },
+        {
+          "label": "Weight of Baby (In Grams)",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "88f9deb3-adf5-4eba-88b4-1d98e34e17c8"
+              },
+              "id": "weightOfBabyAtBirth",
+              "label": "Weight of Baby - At Birth"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "min": "",
+                "concept": "154ce667-32c7-4be8-9511-09f2113b9d30"
+              },
+              "id": "weightOfBabyAtAdmission",
+              "label": "Weight of Baby - At Admission"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "e0dd8340-f0ab-4941-a6f4-b968cc4f2346"
+              },
+              "id": "weightOfBabyAtDischarge",
+              "label": "Weight of Baby - At Discharge"
+            }
+          ]
+        },
+        {
+          "label": "APGAR Score",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "min": "",
+                "concept": "6beaa81b-272a-4260-bb75-dccaf7845f6d"
+              },
+              "id": "apgarScoreAt1Minute",
+              "label": "APGAR Score at 1 minute"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "c1573ed3-6c67-459a-b570-9c06c0b9564d"
+              },
+              "id": "apgarScoreAt5Minutes",
+              "label": "APGAR score at 5 minutes"
+            }
+          ]
+        },
+        {
+          "label": "OCF & Fetal Crown Length",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "742dd466-2fa5-43de-a520-7037a7429b74"
+              },
+              "id": "occipitoFrontalCircumference(Cm)",
+              "label": "Occipito-Frontal Circumference (cm)"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "af5e0519-5064-431b-889e-64a1ea7ab9d3"
+              },
+              "id": "fetalCrownLength(Cm)",
+              "label": "Fetal Crown Length (cm)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Complications",
+      "sections": [
+        {
+          "label": "Complications",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "1a061c7b-558a-4d95-b551-8aab706add3b",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              },
+              "id": "birthAsphyxia",
+              "label": "Birth Asphyxia"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "0c930991-3395-46fc-bccd-8886d0eda9a2",
+                "answers": [
+                  {
+                    "concept": "31c6de8e-226a-484a-b863-7e380e7f60d1",
+                    "label": "Asphyxiated"
+                  },
+                  {
+                    "concept": "0b50af28-5c6b-473f-a8a4-01ffb14ae305",
+                    "label": "Hypothermia"
+                  },
+                  {
+                    "concept": "3e24a1f0-f752-46b6-bc7b-95d131c8e2cb",
+                    "label": "Hypoglycemia"
+                  },
+                  {
+                    "concept": "57cc5f33-e22d-47b2-9039-f74aeff25b30",
+                    "label": "IUGR"
+                  },
+                  {
+                    "concept": "9253a155-0129-4a07-a541-811b8b24ec7a",
+                    "label": "Meconium aspiration"
+                  },
+                  {
+                    "concept": "e40bd0b6-de60-4e09-8529-67e6884ffa11",
+                    "label": "Low Birth Weight"
+                  },
+                  {
+                    "concept": "6c66fab4-6258-4380-a892-f4493b1adc04",
+                    "label": "Neonatal Sepsis"
+                  },
+                  {
+                    "concept": "e9c6a380-8d0b-453e-a1e5-d4965af526b3",
+                    "label": "Prematurity"
+                  },
+                  {
+                    "concept": "01bb4be4-48e5-48f2-86ad-e1b25503e079",
+                    "label": "Respiratory distress"
+                  },
+                  {
+                    "concept": "bd5daf7a-1abd-4b98-a5c0-b884de038bce",
+                    "label": "Rh incompatibility reaction"
+                  },
+                  {
+                    "concept": "dd257e12-1172-43d3-a879-bc8e60c25237",
+                    "label": "Shoulder Dystocia"
+                  },
+                  {
+                    "concept": "4026fe90-f218-456b-90d0-2041aff7016a",
+                    "label": "No Complications"
+                  },
+                  {
+                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Other"
+                  }
+                ]
+              },
+              "id": "newbornComplicationAtTimeOfBirth",
+              "label": "Newborn Complication at time of Birth"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "0f7ac190-7d84-4622-b6c3-9f348fc137b6",
+                "answers": [
+                  {
+                    "concept": "3780dfcc-5633-46fb-a11f-77df9a8964e9",
+                    "label": "Antepartum Haemorrhage"
+                  },
+                  {
+                    "concept": "cfb7af94-9e87-4d0e-9dba-0bb23e7e45ff",
+                    "label": "Chorioamnionitis maternal fever"
+                  },
+                  {
+                    "concept": "118744AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Eclampsia"
+                  },
+                  {
+                    "concept": "1449AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Gestational Diabetes"
+                  },
+                  {
+                    "concept": "91cee060-5595-410c-8f77-9bbecde67827",
+                    "label": "Gestational Hypertension"
+                  },
+                  {
+                    "concept": "0626bda9-cbfd-46c6-9d1c-6621235786ec",
+                    "label": "Hyperthyroidism"
+                  },
+                  {
+                    "concept": "06961317-3fec-4649-880e-ddfdba0ec888",
+                    "label": "Hypothyroidism"
+                  },
+                  {
+                    "concept": "3bfd49a4-af0e-4dd3-ac14-c5b8d9b850a9",
+                    "label": "Maternal Hearth Disease"
+                  },
+                  {
+                    "concept": "129251AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Pre-eclampsia"
+                  },
+                  {
+                    "concept": "e5b16a6a-eba2-43ad-86bc-9d448c94aa49",
+                    "label": "Sepsis"
+                  },
+                  {
+                    "concept": "c45b2bda-de05-4314-a062-43dc1e7a7c27",
+                    "label": "Severe Anaemia"
+                  },
+                  {
+                    "concept": "4026fe90-f218-456b-90d0-2041aff7016a",
+                    "label": "No Complications"
+                  },
+                  {
+                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Other"
+                  }
+                ]
+              },
+              "id": "complicationsToMotherAtTimeOfBirth",
+              "label": "Complications to Mother at Time of Birth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Clinical Assesment and Management",
+      "sections": [
+        {
+          "label": "Newborn Clinical Assessment",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "e68f2c2f-4a11-4696-8f73-b532cc07f7de",
+                "answers": [
+                  {
+                    "concept": "0477f18c-c5ad-4a2a-8b65-b0a5f1f89d9a",
+                    "label": "Gastroschisis"
+                  },
+                  {
+                    "concept": "6e503f5d-e765-4d29-a777-9f23c320077a",
+                    "label": "Hypospadias"
+                  },
+                  {
+                    "concept": "e4d7b11e-f42e-418a-b64f-9655f4f020d4",
+                    "label": "Imperforate Anus"
+                  },
+                  {
+                    "concept": "7d4252b2-0802-41cc-8284-54a25bc768d9",
+                    "label": "Limb Reduction Defect"
+                  },
+                  {
+                    "concept": "8985b388-bc2b-4f39-b67e-2e976d253f2a",
+                    "label": "Minor Defect(specify)"
+                  },
+                  {
+                    "concept": "2266b0a9-1aa6-49e1-b1bb-185037246b8d",
+                    "label": "Neural Tube Defect"
+                  },
+                  {
+                    "concept": "6d98aec4-9ab3-48af-889c-34b2c2e7d2a6",
+                    "label": "No Anomoly Detected"
+                  },
+                  {
+                    "concept": "ac49f422-98b2-475b-a979-bfe35d79e21e",
+                    "label": "Omphalocele/Exomphalos"
+                  },
+                  {
+                    "concept": "16b1afd5-78c8-41d0-b8ac-9e90f46c3ab7",
+                    "label": "Oro-facial Cleft: Cleft lip/palate"
+                  },
+                  {
+                    "concept": "2777f576-a354-4b3e-a16f-01360edf9748",
+                    "label": "Talipes Equinovarus- Club Foot"
+                  },
+                  {
+                    "concept": "8f25f078-791b-467f-b0ea-67d27077a4f7",
+                    "label": "Other Defect(Specify)"
+                  }
+                ]
+              },
+              "id": "majorCongentialAnomaly",
+              "label": "Major Congential Anomaly"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "d34ccac2-394e-4c4e-81a5-470f2ea4fc12",
+                "answers": [
+                  {
+                    "concept": "d2b8f440-823f-4eb6-8241-95bb90f9f1e8",
+                    "label": "Aspiration"
+                  },
+                  {
+                    "concept": "1a061c7b-558a-4d95-b551-8aab706add3b",
+                    "label": "Birth Asphyxia"
+                  },
+                  {
+                    "concept": "2d630e90-9d2c-419c-9bc5-e3670a820292",
+                    "label": "Congential Heart Disease"
+                  },
+                  {
+                    "concept": "ef896904-2354-4b34-b688-739b19236685",
+                    "label": "Hyperbilirubinemia risk factor"
+                  },
+                  {
+                    "concept": "e35dcdc7-8aa7-4d78-b1fb-46ecb0ff17d1",
+                    "label": "Congenital anomalies"
+                  },
+                  {
+                    "concept": "0b50af28-5c6b-473f-a8a4-01ffb14ae305",
+                    "label": "Hypothermia"
+                  },
+                  {
+                    "concept": "e40bd0b6-de60-4e09-8529-67e6884ffa11",
+                    "label": "Low Birth Weight"
+                  },
+                  {
+                    "concept": "57cc5f33-e22d-47b2-9039-f74aeff25b30",
+                    "label": "IUGR"
+                  },
+                  {
+                    "concept": "9253a155-0129-4a07-a541-811b8b24ec7a",
+                    "label": "Meconium aspiration"
+                  },
+                  {
+                    "concept": "8d029177-1ea7-4716-b5d5-092d159017dd",
+                    "label": "Necrotising Enterolitis"
+                  },
+                  {
+                    "concept": "6c66fab4-6258-4380-a892-f4493b1adc04",
+                    "label": "Neonatal Sepsis"
+                  },
+                  {
+                    "concept": "aeec2100-ec25-4b7b-882d-5b018bac9d96",
+                    "label": "Neonatal AKI"
+                  },
+                  {
+                    "concept": "4f76a11c-58ce-40d0-8e4e-22a60ce8b839",
+                    "label": "Premature Rupture of Membrane"
+                  },
+                  {
+                    "concept": "3086e7cb-3658-4c31-a76c-7ebc74a8f5d0",
+                    "label": "Prematurity/Pre term"
+                  },
+                  {
+                    "concept": "01bb4be4-48e5-48f2-86ad-e1b25503e079",
+                    "label": "Respiratory distress"
+                  },
+                  {
+                    "concept": "d2cc2901-f075-484f-99fc-a79275523be4",
+                    "label": "Pustulosis"
+                  },
+                  {
+                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Other"
+                  }
+                ]
+              },
+              "id": "causeOfAdmission",
+              "label": "Cause of Admission"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "b3425793-06a3-415d-9c54-5de01818f8f8",
+                "answers": [
+                  {
+                    "concept": "aa29e340-5d22-445f-baf0-516df7d99d8c",
+                    "label": "Alternative Feeding(Nasogastric/Cup Feeding)"
+                  },
+                  {
+                    "concept": "961da973-109d-4a3b-821e-6e7f356294f3",
+                    "label": "Blood Transfusion"
+                  },
+                  {
+                    "concept": "25b3bcc3-8e83-4632-b840-1e413e0aa6ef",
+                    "label": "Continuous Positive Airway Pressure"
+                  },
+                  {
+                    "concept": "dedb8bc3-6ff2-4a5b-b8e6-241ec84f0a56",
+                    "label": "Effective Phototherapy"
+                  },
+                  {
+                    "concept": "09f5605a-1fb2-44c6-a45c-83ffffc4a75d",
+                    "label": "Exchange Transfusion/Partial Transfusion"
+                  },
+                  {
+                    "concept": "ce2ea33d-a82d-420d-b05b-49611f588472",
+                    "label": "Hypoglycemia Management"
+                  },
+                  {
+                    "concept": "c7422cbd-69af-4136-966c-96a8d059333e",
+                    "label": "Hypothermia Management"
+                  },
+                  {
+                    "concept": "4c235f58-c5e3-4715-8818-e3e3b630100d",
+                    "label": "Injectable Antibiotics for Neonatal Sepsis as per Protocol"
+                  },
+                  {
+                    "concept": "3c2297ab-bcbb-4a31-b622-ffbce1b9f8ea",
+                    "label": "Intravenous Fluid"
+                  },
+                  {
+                    "concept": "02a8cff9-7788-418c-aed9-11396a518fb7",
+                    "label": "KMC(Partial or Continuous)"
+                  },
+                  {
+                    "concept": "a082bdf7-0248-4bfe-b6f6-cc1a68923c1f",
+                    "label": "Management of Pneumothrox/Chest Tube/Needle Puncture"
+                  },
+                  {
+                    "concept": "69673f6c-f4ae-46a5-860d-9cba38eb43a7",
+                    "label": "Management of Shock"
+                  },
+                  {
+                    "concept": "5e5e78bd-6a4b-47cd-b239-4b267f630280",
+                    "label": "Mechanical/Assisted Ventilation"
+                  },
+                  {
+                    "concept": "c1666397-8fa0-4e0f-b70e-b5f293b5e8fa",
+                    "label": "Retinopathy of Prematurity Screening"
+                  },
+                  {
+                    "concept": "9f9902e7-e5cb-493b-8699-ce17926b9956",
+                    "label": "Safe Administration of Oxygen"
+                  },
+                  {
+                    "concept": "60013b1c-26e4-4ee3-a196-20c62ec3a074",
+                    "label": "Seizure Management"
+                  },
+                  {
+                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Other"
+                  }
+                ]
+              },
+              "id": "management",
+              "label": "Management"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "bc44de6f-db98-42c7-98b5-5fd059f50d3a"
+              },
+              "id": "referredTo",
+              "label": "Referred To"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "dd528487-82a5-4082-9c72-ed246bd49591",
+  "referencedForms": [],
+  "uuid": "778ea229-5d17-47b7-8081-c85b9635a714",
+  "description": "SNCU/NICU",
+  "version": "1",
+  "encounter": "Consultation",
+  "published": true,
+  "retired": false,
+  "formRules": {
+    "maxAge": 1
+  }
+}
